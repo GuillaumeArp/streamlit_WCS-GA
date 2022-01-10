@@ -4,3 +4,5 @@
 Streamlit Quest WCS
 
 Ce projet a pour but de créer un dashboard à l'aide de Streamlit qui permet de visualiser des informations provenant d'un dataset recensant les caractéristiques de certaines voitures sorties entre 1971 et 1983, en fonction de leur région d'origine.
+
+Le dashboard peut être consulté sur [cette page](https://share.streamlit.io/guillaumearp/streamlit_wcs-ga/main/app.py).
