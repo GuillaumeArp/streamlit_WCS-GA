@@ -229,13 +229,13 @@ def scatters():
         elif region == 'USA':
             df = df_usa
             cmap = ['coral']
-        elif region =='Japan':
+        elif region =='Japon':
             df = df_jp
             cmap = ['linen']
         else:
             df = df_cars
 
-        region_list = ['Europe', 'USA', 'Japan']
+        region_list = ['Europe', 'USA', 'Japon']
         
         if region not in region_list:
             fig = px.scatter(df, x=col1, y=col2, color='continent', color_discrete_sequence=['coral', 'limegreen', 'linen'], title=f'Nuage de points entre {col1} et {col2} au niveau mondial', opacity=0.7)
@@ -282,7 +282,7 @@ def scatters():
     col11, col12, col13, col14, col15, col16, col17 = st.columns([3,3,3,1,3,3,3])
     
     with col11:
-        region1 = st.selectbox('Sélectionnez une région', ('Europe', 'USA', 'Japon', 'Global'), key=31, index=1)
+        region3 = st.selectbox('Sélectionnez une région', ('Europe', 'USA', 'Japon', 'Global'), key=31, index=1)
     
     with col12:
         col_scatter5 = st.selectbox('Sélectionnez l\'axe x', cols, key=32, index=3)
@@ -291,7 +291,7 @@ def scatters():
         col_scatter6 = st.selectbox('Sélectionnez l\'axe y', cols, key=35, index=4)
         
     with col15:
-        region2 = st.selectbox('Sélectionnez une région', ('Europe', 'USA', 'Japon', 'Global'), key=33, index=2)
+        region4 = st.selectbox('Sélectionnez une région', ('Europe', 'USA', 'Japon', 'Global'), key=33, index=2)
     
     with col16:
         col_scatter7 = st.selectbox('Sélectionnez l\'axe x', cols, key=34, index=4)
@@ -302,10 +302,10 @@ def scatters():
     col1, col2 = st.columns(2)
     
     with col1:
-        st.plotly_chart(draw_scatter(col_scatter5, col_scatter6, region1))
+        st.plotly_chart(draw_scatter(col_scatter5, col_scatter6, region3))
         
     with col2:
-        st.plotly_chart(draw_scatter(col_scatter7, col_scatter8, region2))
+        st.plotly_chart(draw_scatter(col_scatter7, col_scatter8, region4))
         
     "On retrouve ici le même type d'information que sur la page précédente, mais de façon plus facilement comparable. Il est intéressante de noter ceci dit l'évolution au fil des années, en particulier pour les voitures américaines, avec une tendance à la normalisation de la puissance et de la consommation, très probablement en conséquence aux deux chocs pétroliers de 1973 et 1979."
 
