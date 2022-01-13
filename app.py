@@ -217,7 +217,7 @@ def histograms():
     with col2:
         st.plotly_chart(draw_histogram(column2, region2, nbins2))
         
-    "De façon générale, on peut noter ici que les voitures américaines ont tendance à cette période à être beaucoup plus puissantes, et avec plus de cylindres, que les voitures européennes et japonaises en comparaison. On peut noter par exemple que le V8 est majoritaire aux USA, mais inexistant dans le reste du monde. Logiquement, la consommation est bien plus élevée aux USA, et l\'autonomie des véhicules s'en resset, avec un mode autour de 15 mpg pour les voitures américaines, contre 27 pour les européennes et 32 pour les japonaises."
+    "De façon générale, on peut noter ici que les voitures américaines ont tendance à cette période à être beaucoup plus puissantes, et avec plus de cylindres, que les voitures européennes et japonaises en comparaison. On peut noter par exemple que le V8 est majoritaire aux USA, mais inexistant dans le reste du monde. Logiquement, la consommation est bien plus élevée aux USA, et l\'autonomie des véhicules s'en ressent, avec un mode autour de 15 mpg pour les voitures américaines, contre 27 pour les européennes et 32 pour les japonaises."
 
 def scatters():
     
